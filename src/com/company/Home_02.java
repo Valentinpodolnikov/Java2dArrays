@@ -3,7 +3,7 @@ package com.company;
 public class Home_02 {
 
     public static void main(String[] args) {
-        int N = 7;
+        int N = 5;
         int mas[][] = new int[N][N];
         int num = 1;
 
