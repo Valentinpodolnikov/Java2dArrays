@@ -3,7 +3,7 @@ package com.company;
 public class Home_02 {
 
     public static void main(String[] args) {
-        int N = 5;
+        int N = 7;
         int mas[][] = new int[N][N];
         int num = 1;
 
@@ -14,9 +14,16 @@ public class Home_02 {
                 if (i > j) {
                     mas[i][j] = (i + j + num + 2 * (i - j));
                 }
-                if (i != 0 && j == 0) {
-                    mas[i][j] = (i + j + num + 2 * (i - j));
+                if (j == 0 && i < N - 1 && i != 0) {
+                    mas[i][j] = (3 * N) - ((i + j) % 2);
                 }
+
+                if (i == 1 && j < N - 1) {
+                    mas[i][j] = ((i + j) + 3 * N);
+                }
+//                if(i == 2 && j <= N - 2){
+//
+//                }
             }
         }
 
